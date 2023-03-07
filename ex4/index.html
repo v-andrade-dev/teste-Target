@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        sp = 67836.43
+        rj = 36678.66
+        mg = 29229.88
+        es = 27165.48
+        outros = 19849.53
+
+        total = sp + rj + mg + es + outros;
+
+        console.log("Faturamento mensal total: " + total);
+        console.log("O percentual de cada estado foi \n"
+            + "SP: "+ calcularPercentual(sp, total) + " %\n"
+            + "RJ: "+ calcularPercentual(rj, total) + " %\n"
+            + "MG: "+ calcularPercentual(mg, total) + " %\n"
+            + "ES: "+ calcularPercentual(es, total) + " %\n"
+            + "Outros: "+ calcularPercentual(outros, total) + " %");
+
+        function calcularPercentual(n, total){
+            return n * 100 / total;
+        }
+
+    </script>
+</body>
+</html>
